@@ -47,7 +47,7 @@ for i, sentence in enumerate(sentences):
 
 print('Build model...')
 
- 
+
 model = Sequential()
 model.add(LSTM(256, input_shape=(maxlen, len(chars))))
 model.add(Dropout(0.2))
